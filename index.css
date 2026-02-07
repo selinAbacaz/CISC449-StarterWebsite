@@ -1,0 +1,43 @@
+body,html{
+margin: 0;
+padding: 0;
+
+}
+
+.bg-container{
+    background-color: #fff;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(60deg, #ff7d49, #feb47b, #ff5f5f);
+    background-size: 600% 600%;
+    animation: bgAnimatedGradient 10s infinite linear;
+
+}
+
+h1{
+    text-align: center;
+    padding-top: 25%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 4vw;
+    letter-spacing: 3px;
+    color: white;
+    margin: 0; 
+
+
+}
+
+@keyframes bgAnimatedGradient{
+    0%{
+        background-position: 0 85%;
+
+    }
+    50%{
+        background-position: 100% 20%;
+
+    }
+    100%{
+        background-position:  0  85%;
+
+    }
+
+}
