@@ -14,30 +14,40 @@
 <html lang="en">
 
     
-    <body class="custom-cursor">
+    <body >
 
 
         <div class=" bg-container" ">
             
-            <section class="catSection">
-                <img id="0" class="images" src="images/cat-explode.gif" alt="cat1" class="cat" hidden>
-                <img id="1" class="images" src="images/cat-jammin.gif" alt="cat2" class="cat" hidden>
-                <img id="2" class="images" src="images/cat-pop.gif" alt="cat1" class="cat" hidden>
-                <img id="3" class="images" src="images/cat-vanish.gif" alt="cat1" class="cat" hidden>
-            </section>
             
 
             <section class="content" >
-                <h1> 🫵Hello Fellow ClassMates🫵 </h1>
+                <h1> Lab 8.1, Color Encoding on the Internet </h1>
 
                 <section class="contentSection">
-                    <div id="AddCats" class="custom-pointer contentDiv" 
+                    <div class="custom-pointer contentDiv" 
                         > 
-                        Add more cats (?)
+                        <div class= "contentColors" style=" background-color: #c1df7b"></div>
+                        <p> This color is #c1df7b</p>
+                        
+                    </div>
+                    <div class="custom-pointer contentDiv" 
+                        > 
+                        <div class= "contentColors" style=" background-color: #f47272"></div>
+                        <p> This color is #f47272</p>
+                        
                     </div>
                     <div id="RemoveCats" class="custom-pointer contentDiv" 
                         > 
-                        Add less cats 
+                        <div class= "contentColors" style=" background-color: #fad76e"></div>
+                        <p> This color is #fad76e</p>
+                        
+                    </div>
+                    <div id="RemoveCats" class="custom-pointer contentDiv" 
+                        > 
+                        <div class= "contentColors" style=" background-color: #9aede2"></div>
+                        <p> This color is #9aede2</p>
+                        
                     </div>
 
                 </section>
@@ -45,47 +55,10 @@
             </section>
 
 
-            <section class="otherSection">
-                
-                <img id="4"  src="images/corgi-evil.gif" alt="cat1" class="cat" hidden>
-                
-
-            </section>
+            
             
         </div>
 
-        <script>
-            let currentCatIndex = 0;
-
-            const addCats= document.getElementById("AddCats");
-            const removeCats= document.getElementById("RemoveCats");
-
-            addCats.addEventListener("click", () => {
-                if (currentCatIndex < 5) {
-
-                    console.log(currentCatIndex);
-                    const cat = document.getElementById(currentCatIndex)
-                    cat.hidden = false
-                    currentCatIndex++;
-
-                    
-                }
-
-            });
-
-            removeCats.addEventListener("click", () => {
-                if (currentCatIndex > 0) {
-
-                    currentCatIndex--;
-                    const cat = document.getElementById(currentCatIndex)
-                    cat.hidden = true
-                    
-                    console.log(currentCatIndex);
-                }
-            });
-
-
-        </script>
 
 
     </body>
