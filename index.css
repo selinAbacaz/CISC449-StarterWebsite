@@ -30,7 +30,7 @@ cursor: none;
     background-color: #fff;
     width: 100vw;
     height: 100vh;
-    background-image: linear-gradient(60deg, #c5f9d7, #f7d486, #f27a7d);
+    background-image: linear-gradient(60deg, purple, red, yellow ); /* We are modifying here ! */
     background-size: 600% 600%;
     animation: bgAnimatedGradient 10s infinite linear;
 
@@ -62,4 +62,51 @@ h1{
 
     }
 
+}
+
+.images{
+float:left; 
+margin-left: 12vw;
+
+}
+
+.content{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.contentSection{
+gap:2vw;
+display: flex;
+flex-direction: row;
+
+}
+
+.contentDiv{
+    border-radius: 20px; 
+    background-color: antiquewhite; 
+    font-size: 30px; 
+    font-family: 'Montserrat', sans-serif; 
+    color: burlywood; 
+    border-color: antiquewhite; 
+    width:20vw; 
+    height:10vh; 
+    justify-content: center; 
+    align-items: center; 
+    display: flex;
+}
+
+.otherSection{
+    position:fixed; 
+    float:left; 
+    margin-left: 40%; 
+    padding-top: 2%;
+}
+
+.catSection{
+    position: fixed; 
+    padding-top:4vh;
 }
